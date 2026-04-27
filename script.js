@@ -3,19 +3,19 @@ const movieDatabase = {
         name: 'The Matrix Resurgence',
         price: 10,
         poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80',
-        trailer: 'https://www.w3schools.com/html/mov_bbb.mp4'
+        trailer: 'trailer.mp4'
     },
     'stellar': {
         name: 'Stellar Journey',
         price: 12,
         poster: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80',
-        trailer: 'https://www.w3schools.com/html/mov_bbb.mp4'
+        trailer: 'trailer.mp4'
     },
     'mind': {
         name: 'Mind Heist',
         price: 15,
         poster: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=80',
-        trailer: 'https://www.w3schools.com/html/mov_bbb.mp4'
+        trailer: 'trailer.mp4'
     }
 };
 
@@ -75,9 +75,9 @@ function updateMediaAndSummary() {
     if (selectedMovie && movieDatabase[selectedMovie]) {
         document.getElementById('movie-poster').src = movieDatabase[selectedMovie].poster;
 
-        const videoElement = document.getElementById('movie-trailer');
-        videoElement.src = movieDatabase[selectedMovie].trailer;
-        videoElement.load();
+        const trailerVideo = document.getElementById('movie-trailer');
+        trailerVideo.src = movieDatabase[selectedMovie].trailer;
+        trailerVideo.load();
 
         document.getElementById('summary-movie').textContent = movieDatabase[selectedMovie].name;
     } else {
