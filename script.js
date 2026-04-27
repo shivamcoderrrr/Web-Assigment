@@ -1,18 +1,18 @@
 const movieDatabase = {
     'matrix': {
-        name: 'The Matrix Resurgence',
+        name: 'Dhurandhar',
         price: 10,
         poster: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80',
         trailer: 'trailer.mp4'
     },
     'stellar': {
-        name: 'Stellar Journey',
+        name: 'Bhoot Bangla',
         price: 12,
         poster: 'https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=400&q=80',
         trailer: 'trailer.mp4'
     },
     'mind': {
-        name: 'Mind Heist',
+        name: 'Jolly LLB 3',
         price: 15,
         poster: 'https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=400&q=80',
         trailer: 'trailer.mp4'
