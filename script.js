@@ -39,6 +39,12 @@ window.onload = function() {
     startBannerRotation();
     restoreBookingData();
     calculateAndRenderSummary();
+
+    const trailerVideo = document.getElementById('movie-trailer');
+    trailerVideo.muted = true;
+    trailerVideo.play().catch(() => {
+        // Autoplay can still be blocked on a few browsers/settings.
+    });
 };
 
 const movieSelect = document.getElementById('movie-select');
@@ -78,6 +84,10 @@ function updateMediaAndSummary() {
         const trailerVideo = document.getElementById('movie-trailer');
         trailerVideo.src = movieDatabase[selectedMovie].trailer;
         trailerVideo.load();
+        trailerVideo.muted = true;
+        trailerVideo.play().catch(() => {
+            // Keep UI responsive even if autoplay is blocked.
+        });
 
         document.getElementById('summary-movie').textContent = movieDatabase[selectedMovie].name;
     } else {
