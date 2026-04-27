@@ -359,11 +359,109 @@ th {
     .layout-container {
         flex-direction: column;
     }
+    .controls-panel {
+        min-width: 0;
+    }
     .media-container {
         height: auto;
         flex-direction: column;
     }
     .media-box {
         height: 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-header {
+        padding: 1.75rem 0.75rem 1rem;
+    }
+
+    #main-title {
+        font-size: 2rem;
+    }
+
+    #welcome-message {
+        font-size: 0.95rem;
+    }
+
+    #rotating-banner {
+        font-size: 0.9rem;
+        padding: 0.45rem;
+    }
+
+    .layout-container {
+        margin: 1rem auto;
+        gap: 1rem;
+        padding: 0 0.75rem;
+    }
+
+    .card {
+        padding: 1.15rem;
+        border-radius: 12px;
+    }
+
+    .card h2, .card h3 {
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    .form-input {
+        font-size: 0.95rem;
+        padding: 0.7rem 0.85rem;
+    }
+
+    .radio-options {
+        flex-direction: column;
+        gap: 0.65rem;
+    }
+
+    .radio-label {
+        width: 100%;
+    }
+
+    .primary-btn {
+        font-size: 1rem;
+        padding: 0.85rem;
+    }
+
+    .media-box {
+        height: 190px;
+    }
+
+    .pricing-schema {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 460px;
+        font-size: 0.88rem;
+    }
+
+    th, td {
+        padding: 0.65rem;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .summary-item .value {
+        font-size: 1rem;
+    }
+
+    .total-row {
+        font-size: 1.25rem;
+    }
+
+    .main-footer {
+        padding: 1.2rem 0.75rem;
+        font-size: 0.82rem;
     }
 }
